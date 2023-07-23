@@ -7,7 +7,11 @@ const Dotenv = require("dotenv-webpack");
 module.exports = {
   mode: "development",
   entry: {
-    naacm: "./src/assets/js/app.js",
+    // sets the entry point for each page to general.js
+    home: "./src/assets/js/general.js",
+    contact: "./src/assets/js/general.js",
+    about: "./src/assets/js/general.js",
+    vendors: "./src/assets/js/general.js",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -53,9 +57,27 @@ module.exports = {
   plugins: [
     new htmlWebpackPlugin({
       template: path.resolve(__dirname, "./src/index.html"),
-      chunks: ["naacm"],
+      chunks: ["home"],
       inject: "body",
       filename: "index.html",
+    }),
+    new htmlWebpackPlugin({
+      template: path.resolve(__dirname, "./src/contact.html"),
+      chunks: ["contact"],
+      inject: "body",
+      filename: "contact.html",
+    }),
+    new htmlWebpackPlugin({
+      template: path.resolve(__dirname, "./src/about.html"),
+      chunks: ["about"],
+      inject: "body",
+      filename: "about.html",
+    }),
+    new htmlWebpackPlugin({
+      template: path.resolve(__dirname, "./src/vendors.html"),
+      chunks: ["vendors"],
+      inject: "body",
+      filename: "vendors.html",
     }),
     new Dotenv(),
     new copyPlugin({
