@@ -96,5 +96,5 @@ class Vendors {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  new Vendors();
+  if (window.location.pathname.includes("vendors.html")) new Vendors();
 });

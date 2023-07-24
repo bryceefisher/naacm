@@ -96,5 +96,5 @@ class About {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  new About();
+  if (window.location.pathname.includes("about.html")) new About();
 });
