@@ -39,7 +39,7 @@ class Home {
               <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item" id="navAbout">
-              <a class="nav-link" href="about.html">Vendors</a>
+              <a class="nav-link" href="vendors.html">Vendors</a>
           </li>
           <li class="nav-item" id="navContact">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -59,7 +59,7 @@ class Home {
               <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item" id="navAbout">
-              <a class="nav-link" href="about.html">Vendors</a>
+              <a class="nav-link" href="vendors.html">Vendors</a>
           </li>
           <li class="nav-item" id="navContact">
               <a class="nav-link" href="contact.html">Contact</a>
