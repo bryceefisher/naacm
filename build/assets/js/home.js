@@ -118,10 +118,5 @@ class Home {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  if (
-    window.location.pathname == "/" ||
-    window.location.pathname == "/index.html" ||
-    window.location.pathname == "index.html"
-  )
-    new Home();
+  if (window.location.pathname.includes("index.html")) new Home();
 });

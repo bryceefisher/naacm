@@ -22,6 +22,7 @@ module.exports = {
   target: "web",
   devServer: {
     static: "./src",
+    port: 3000,
   },
   devtool: "source-map",
   module: {

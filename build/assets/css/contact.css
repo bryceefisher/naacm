@@ -1,0 +1,36 @@
+button {
+  color: white;
+  background-color: #7292bf;
+  border-color: #7292bf;
+}
+
+a {
+  color: #62b7d9;
+}
+
+#vendorDiv {
+  background-color: #d9b29c;
+  color: white;
+  height: 10vh;
+}
+
+#mapIFrame {
+  box-shadow: 6px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#contactContainer {
+  background-color: #e9e1d9;
+}
+
+#applicationDiv {
+  background-color: #e9e1d9 !important;
+}
+.fullMap {
+  height: 400px;
+  width: 600px;
+}
+
+.mobileMap {
+  height: 350px;
+  width: 350px;
+}
