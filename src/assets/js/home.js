@@ -1,3 +1,5 @@
+import setNavElems from "./general";
+
 class Home {
   constructor() {
     this.setCurrentYear();
@@ -39,7 +41,7 @@ class Home {
               <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item" id="navAbout">
-              <a class="nav-link" href="about.html">Vendors</a>
+              <a class="nav-link" href="vendors.html">Vendors</a>
           </li>
           <li class="nav-item" id="navContact">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -59,7 +61,7 @@ class Home {
               <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item" id="navAbout">
-              <a class="nav-link" href="about.html">Vendors</a>
+              <a class="nav-link" href="vendors.html">Vendors</a>
           </li>
           <li class="nav-item" id="navContact">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -111,7 +113,7 @@ class Home {
 
   addEventListeners() {
     window.addEventListener("resize", this.togglePhotos);
-    window.addEventListener("resize", this.setNavElems);
+    window.addEventListener("resize", setNavElems);
     window.addEventListener("submit", this.submitForm);
     window.addEventListener("scroll", this.navOpacity);
   }
@@ -121,7 +123,8 @@ window.addEventListener("DOMContentLoaded", () => {
   if (
     window.location.pathname == "/" ||
     window.location.pathname == "/index.html" ||
-    window.location.pathname == "index.html"
+    window.location.pathname == "index.html" ||
+    window.location.pathname.includes("index.html")
   )
     new Home();
 });

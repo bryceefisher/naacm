@@ -3035,9 +3035,9 @@ var About = /*#__PURE__*/function () {
     value: function setNavElems() {
       var collapseDiv = document.querySelector("#navbarSupportedContent");
       if (window.innerWidth < 992) {
-        collapseDiv.innerHTML = "<div class=\"container-fluid text-center\">\n          <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\" id=\"nav-ul\">\n              <li class=\"nav-item\" id=\"navHome\">\n                  <a class=\"nav-link\" aria-current=\"page\" href=\"index.html\">Home</a>\n              </li>\n              <li class=\"nav-item\" id=\"navContact\">\n                  <a class=\"nav-link\" href=\"about.html\">About</a>\n              </li>\n              <li class=\"nav-item\" id=\"navAbout\">\n                  <a class=\"nav-link\" href=\"about.html\">Vendors</a>\n              </li>\n              <li class=\"nav-item\" id=\"navContact\">\n                  <a class=\"nav-link\" href=\"contact.html\">Contact</a>\n              </li>\n          </ul>\n    \n          <hr>\n          <button class=\"btn btn-outline-success\" type=\"submit\">Donate</button>\n      </div>";
+        collapseDiv.innerHTML = "<div class=\"container-fluid text-center\">\n          <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\" id=\"nav-ul\">\n              <li class=\"nav-item\" id=\"navHome\">\n                  <a class=\"nav-link\" aria-current=\"page\" href=\"index.html\">Home</a>\n              </li>\n              <li class=\"nav-item\" id=\"navContact\">\n                  <a class=\"nav-link\" href=\"about.html\">About</a>\n              </li>\n              <li class=\"nav-item\" id=\"navAbout\">\n                  <a class=\"nav-link\" href=\"vendors.html\">Vendors</a>\n              </li>\n              <li class=\"nav-item\" id=\"navContact\">\n                  <a class=\"nav-link\" href=\"contact.html\">Contact</a>\n              </li>\n          </ul>\n    \n          <hr>\n          <button class=\"btn btn-outline-success\" type=\"submit\">Donate</button>\n      </div>";
       } else {
-        collapseDiv.innerHTML = "<div class=\"container-fluid d-flex justify-content-end\">\n          <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\" id=\"nav-ul\">\n              <li class=\"nav-item\" id=\"navHome\">\n                  <a class=\"nav-link\" aria-current=\"page\" href=\"index.html\">Home</a>\n              </li>\n              <li class=\"nav-item\" id=\"navContact\">\n                  <a class=\"nav-link\" href=\"about.html\">About</a>\n              </li>\n              <li class=\"nav-item\" id=\"navAbout\">\n                  <a class=\"nav-link\" href=\"about.html\">Vendors</a>\n              </li>\n              <li class=\"nav-item\" id=\"navContact\">\n                  <a class=\"nav-link\" href=\"contact.html\">Contact</a>\n              </li>\n          </ul>\n          <button class=\"btn btn-outline-success\" type=\"submit\">Donate</button>\n      </div>";
+        collapseDiv.innerHTML = "<div class=\"container-fluid d-flex justify-content-end\">\n          <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\" id=\"nav-ul\">\n              <li class=\"nav-item\" id=\"navHome\">\n                  <a class=\"nav-link\" aria-current=\"page\" href=\"index.html\">Home</a>\n              </li>\n              <li class=\"nav-item\" id=\"navContact\">\n                  <a class=\"nav-link\" href=\"about.html\">About</a>\n              </li>\n              <li class=\"nav-item\" id=\"navAbout\">\n                  <a class=\"nav-link\" href=\"vendors.html\">Vendors</a>\n              </li>\n              <li class=\"nav-item\" id=\"navContact\">\n                  <a class=\"nav-link\" href=\"contact.html\">Contact</a>\n              </li>\n          </ul>\n          <button class=\"btn btn-outline-success\" type=\"submit\">Donate</button>\n      </div>";
       }
     }
   }, {
@@ -3122,9 +3122,9 @@ var Contact = /*#__PURE__*/function () {
     value: function setNavElems() {
       var collapseDiv = document.querySelector("#navbarSupportedContent");
       if (window.innerWidth < 992) {
-        collapseDiv.innerHTML = "<div class=\"container-fluid text-center\">\n        <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\" id=\"nav-ul\">\n            <li class=\"nav-item\" id=\"navHome\">\n                <a class=\"nav-link\" aria-current=\"page\" href=\"index.html\">Home</a>\n            </li>\n            <li class=\"nav-item\" id=\"navContact\">\n                <a class=\"nav-link\" href=\"about.html\">About</a>\n            </li>\n            <li class=\"nav-item\" id=\"navAbout\">\n                <a class=\"nav-link\" href=\"about.html\">Vendors</a>\n            </li>\n            <li class=\"nav-item\" id=\"navContact\">\n                <a class=\"nav-link\" href=\"contact.html\">Contact</a>\n            </li>\n        </ul>\n  \n        <hr>\n        <button class=\"btn btn-outline-success\" type=\"submit\">Donate</button>\n    </div>";
+        collapseDiv.innerHTML = "<div class=\"container-fluid text-center\">\n        <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\" id=\"nav-ul\">\n            <li class=\"nav-item\" id=\"navHome\">\n                <a class=\"nav-link\" aria-current=\"page\" href=\"index.html\">Home</a>\n            </li>\n            <li class=\"nav-item\" id=\"navContact\">\n                <a class=\"nav-link\" href=\"about.html\">About</a>\n            </li>\n            <li class=\"nav-item\" id=\"navAbout\">\n                <a class=\"nav-link\" href=\"vendors.html\">Vendors</a>\n            </li>\n            <li class=\"nav-item\" id=\"navContact\">\n                <a class=\"nav-link\" href=\"contact.html\">Contact</a>\n            </li>\n        </ul>\n  \n        <hr>\n        <button class=\"btn btn-outline-success\" type=\"submit\">Donate</button>\n    </div>";
       } else {
-        collapseDiv.innerHTML = "<div class=\"container-fluid d-flex justify-content-end\">\n        <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\" id=\"nav-ul\">\n            <li class=\"nav-item\" id=\"navHome\">\n                <a class=\"nav-link\" aria-current=\"page\" href=\"index.html\">Home</a>\n            </li>\n            <li class=\"nav-item\" id=\"navContact\">\n                <a class=\"nav-link\" href=\"about.html\">About</a>\n            </li>\n            <li class=\"nav-item\" id=\"navAbout\">\n                <a class=\"nav-link\" href=\"about.html\">Vendors</a>\n            </li>\n            <li class=\"nav-item\" id=\"navContact\">\n                <a class=\"nav-link\" href=\"contact.html\">Contact</a>\n            </li>\n        </ul>\n        <button class=\"btn btn-outline-success\" type=\"submit\">Donate</button>\n    </div>";
+        collapseDiv.innerHTML = "<div class=\"container-fluid d-flex justify-content-end\">\n        <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\" id=\"nav-ul\">\n            <li class=\"nav-item\" id=\"navHome\">\n                <a class=\"nav-link\" aria-current=\"page\" href=\"index.html\">Home</a>\n            </li>\n            <li class=\"nav-item\" id=\"navContact\">\n                <a class=\"nav-link\" href=\"about.html\">About</a>\n            </li>\n            <li class=\"nav-item\" id=\"navAbout\">\n                <a class=\"nav-link\" href=\"vendors.html\">Vendors</a>\n            </li>\n            <li class=\"nav-item\" id=\"navContact\">\n                <a class=\"nav-link\" href=\"contact.html\">Contact</a>\n            </li>\n        </ul>\n        <button class=\"btn btn-outline-success\" type=\"submit\">Donate</button>\n    </div>";
       }
     }
   }, {
@@ -3224,18 +3224,74 @@ window.addEventListener("DOMContentLoaded", function () {
 
 /***/ }),
 
+/***/ "./src/assets/js/general.js":
+/*!**********************************!*\
+  !*** ./src/assets/js/general.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.esm.js");
+/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
+/* harmony import */ var _src_assets_css_home_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../src/assets/css/home.css */ "./src/assets/css/home.css");
+/* harmony import */ var _src_assets_css_contact_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../src/assets/css/contact.css */ "./src/assets/css/contact.css");
+/* harmony import */ var _src_assets_css_about_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../src/assets/css/about.css */ "./src/assets/css/about.css");
+/* harmony import */ var _src_assets_css_vendors_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../src/assets/css/vendors.css */ "./src/assets/css/vendors.css");
+/* harmony import */ var _src_assets_js_home_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../src/assets/js/home.js */ "./src/assets/js/home.js");
+/* harmony import */ var _src_assets_js_contact_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../src/assets/js/contact.js */ "./src/assets/js/contact.js");
+/* harmony import */ var _src_assets_js_contact_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_src_assets_js_contact_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _src_assets_js_about_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../src/assets/js/about.js */ "./src/assets/js/about.js");
+/* harmony import */ var _src_assets_js_about_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_src_assets_js_about_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _src_assets_js_vendors_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../../src/assets/js/vendors.js */ "./src/assets/js/vendors.js");
+/* harmony import */ var _src_assets_js_vendors_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_src_assets_js_vendors_js__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _src_assets_css_unhide_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../../src/assets/css/unhide.css */ "./src/assets/css/unhide.css");
+// Bootstrap 5 import
+
+
+
+// CSS imports)
+
+
+
+
+//js imports
+
+
+
+
+
+function setNavElems() {
+  var collapseDiv = document.querySelector("#navbarSupportedContent");
+  if (window.innerWidth < 992) {
+    collapseDiv.innerHTML = "<div class=\"container-fluid text-center\">\n          <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\" id=\"nav-ul\">\n              <li class=\"nav-item\" id=\"navHome\">\n                  <a class=\"nav-link\" aria-current=\"page\" href=\"index.html\">Home</a>\n              </li>\n              <li class=\"nav-item\" id=\"navContact\">\n                  <a class=\"nav-link\" href=\"about.html\">About</a>\n              </li>\n              <li class=\"nav-item\" id=\"navAbout\">\n                  <a class=\"nav-link\" href=\"vendors.html\">Vendors</a>\n              </li>\n              <li class=\"nav-item\" id=\"navContact\">\n                  <a class=\"nav-link\" href=\"contact.html\">Contact</a>\n              </li>\n          </ul>\n    \n          <hr>\n          <button class=\"btn btn-outline-success\" type=\"submit\">Donate</button>\n      </div>";
+  } else {
+    collapseDiv.innerHTML = "<div class=\"container-fluid d-flex justify-content-end\">\n          <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\" id=\"nav-ul\">\n              <li class=\"nav-item\" id=\"navHome\">\n                  <a class=\"nav-link\" aria-current=\"page\" href=\"index.html\">Home</a>\n              </li>\n              <li class=\"nav-item\" id=\"navContact\">\n                  <a class=\"nav-link\" href=\"about.html\">About</a>\n              </li>\n              <li class=\"nav-item\" id=\"navAbout\">\n                  <a class=\"nav-link\" href=\"vendors.html\">Vendors</a>\n              </li>\n              <li class=\"nav-item\" id=\"navContact\">\n                  <a class=\"nav-link\" href=\"contact.html\">Contact</a>\n              </li>\n          </ul>\n          <button class=\"btn btn-outline-success\" type=\"submit\">Donate</button>\n      </div>";
+  }
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (setNavElems);
+
+/***/ }),
+
 /***/ "./src/assets/js/home.js":
 /*!*******************************!*\
   !*** ./src/assets/js/home.js ***!
   \*******************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _general__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./general */ "./src/assets/js/general.js");
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
 function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+
 var Home = /*#__PURE__*/function () {
   function Home() {
     _classCallCheck(this, Home);
@@ -3270,9 +3326,9 @@ var Home = /*#__PURE__*/function () {
     value: function setNavElems() {
       var collapseDiv = document.querySelector("#navbarSupportedContent");
       if (window.innerWidth < 992) {
-        collapseDiv.innerHTML = "<div class=\"container-fluid text-center\">\n      <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\" id=\"nav-ul\">\n          <li class=\"nav-item\" id=\"navHome\">\n              <a class=\"nav-link\" aria-current=\"page\" href=\"index.html\">Home</a>\n          </li>\n          <li class=\"nav-item\" id=\"navContact\">\n              <a class=\"nav-link\" href=\"about.html\">About</a>\n          </li>\n          <li class=\"nav-item\" id=\"navAbout\">\n              <a class=\"nav-link\" href=\"about.html\">Vendors</a>\n          </li>\n          <li class=\"nav-item\" id=\"navContact\">\n              <a class=\"nav-link\" href=\"contact.html\">Contact</a>\n          </li>\n      </ul>\n\n      <hr>\n      <button class=\"btn btn-outline-success\" type=\"submit\">Donate</button>\n  </div>";
+        collapseDiv.innerHTML = "<div class=\"container-fluid text-center\">\n      <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\" id=\"nav-ul\">\n          <li class=\"nav-item\" id=\"navHome\">\n              <a class=\"nav-link\" aria-current=\"page\" href=\"index.html\">Home</a>\n          </li>\n          <li class=\"nav-item\" id=\"navContact\">\n              <a class=\"nav-link\" href=\"about.html\">About</a>\n          </li>\n          <li class=\"nav-item\" id=\"navAbout\">\n              <a class=\"nav-link\" href=\"vendors.html\">Vendors</a>\n          </li>\n          <li class=\"nav-item\" id=\"navContact\">\n              <a class=\"nav-link\" href=\"contact.html\">Contact</a>\n          </li>\n      </ul>\n\n      <hr>\n      <button class=\"btn btn-outline-success\" type=\"submit\">Donate</button>\n  </div>";
       } else {
-        collapseDiv.innerHTML = "<div class=\"container-fluid d-flex justify-content-end\">\n      <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\" id=\"nav-ul\">\n          <li class=\"nav-item\" id=\"navHome\">\n              <a class=\"nav-link\" aria-current=\"page\" href=\"index.html\">Home</a>\n          </li>\n          <li class=\"nav-item\" id=\"navContact\">\n              <a class=\"nav-link\" href=\"about.html\">About</a>\n          </li>\n          <li class=\"nav-item\" id=\"navAbout\">\n              <a class=\"nav-link\" href=\"about.html\">Vendors</a>\n          </li>\n          <li class=\"nav-item\" id=\"navContact\">\n              <a class=\"nav-link\" href=\"contact.html\">Contact</a>\n          </li>\n      </ul>\n      <button class=\"btn btn-outline-success\" type=\"submit\">Donate</button>\n  </div>";
+        collapseDiv.innerHTML = "<div class=\"container-fluid d-flex justify-content-end\">\n      <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\" id=\"nav-ul\">\n          <li class=\"nav-item\" id=\"navHome\">\n              <a class=\"nav-link\" aria-current=\"page\" href=\"index.html\">Home</a>\n          </li>\n          <li class=\"nav-item\" id=\"navContact\">\n              <a class=\"nav-link\" href=\"about.html\">About</a>\n          </li>\n          <li class=\"nav-item\" id=\"navAbout\">\n              <a class=\"nav-link\" href=\"vendors.html\">Vendors</a>\n          </li>\n          <li class=\"nav-item\" id=\"navContact\">\n              <a class=\"nav-link\" href=\"contact.html\">Contact</a>\n          </li>\n      </ul>\n      <button class=\"btn btn-outline-success\" type=\"submit\">Donate</button>\n  </div>";
       }
     }
   }, {
@@ -3317,7 +3373,7 @@ var Home = /*#__PURE__*/function () {
     key: "addEventListeners",
     value: function addEventListeners() {
       window.addEventListener("resize", this.togglePhotos);
-      window.addEventListener("resize", this.setNavElems);
+      window.addEventListener("resize", _general__WEBPACK_IMPORTED_MODULE_0__["default"]);
       window.addEventListener("submit", this.submitForm);
       window.addEventListener("scroll", this.navOpacity);
     }
@@ -3325,7 +3381,7 @@ var Home = /*#__PURE__*/function () {
   return Home;
 }();
 window.addEventListener("DOMContentLoaded", function () {
-  if (window.location.pathname.includes("index.html")) new Home();
+  if (window.location.pathname == "/" || window.location.pathname == "/index.html" || window.location.pathname == "index.html" || window.location.pathname.includes("index.html")) new Home();
 });
 
 /***/ }),
@@ -3354,9 +3410,9 @@ var Vendors = /*#__PURE__*/function () {
     value: function setNavElems() {
       var collapseDiv = document.querySelector("#navbarSupportedContent");
       if (window.innerWidth < 992) {
-        collapseDiv.innerHTML = "<div class=\"container-fluid text-center\">\n          <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\" id=\"nav-ul\">\n              <li class=\"nav-item\" id=\"navHome\">\n                  <a class=\"nav-link\" aria-current=\"page\" href=\"index.html\">Home</a>\n              </li>\n              <li class=\"nav-item\" id=\"navContact\">\n                  <a class=\"nav-link\" href=\"about.html\">About</a>\n              </li>\n              <li class=\"nav-item\" id=\"navAbout\">\n                  <a class=\"nav-link\" href=\"about.html\">Vendors</a>\n              </li>\n              <li class=\"nav-item\" id=\"navContact\">\n                  <a class=\"nav-link\" href=\"contact.html\">Contact</a>\n              </li>\n          </ul>\n    \n          <hr>\n          <button class=\"btn btn-outline-success\" type=\"submit\">Donate</button>\n      </div>";
+        collapseDiv.innerHTML = "<div class=\"container-fluid text-center\">\n          <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\" id=\"nav-ul\">\n              <li class=\"nav-item\" id=\"navHome\">\n                  <a class=\"nav-link\" aria-current=\"page\" href=\"index.html\">Home</a>\n              </li>\n              <li class=\"nav-item\" id=\"navContact\">\n                  <a class=\"nav-link\" href=\"about.html\">About</a>\n              </li>\n              <li class=\"nav-item\" id=\"navAbout\">\n                  <a class=\"nav-link\" href=\"vendors.html\">Vendors</a>\n              </li>\n              <li class=\"nav-item\" id=\"navContact\">\n                  <a class=\"nav-link\" href=\"contact.html\">Contact</a>\n              </li>\n          </ul>\n    \n          <hr>\n          <button class=\"btn btn-outline-success\" type=\"submit\">Donate</button>\n      </div>";
       } else {
-        collapseDiv.innerHTML = "<div class=\"container-fluid d-flex justify-content-end\">\n          <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\" id=\"nav-ul\">\n              <li class=\"nav-item\" id=\"navHome\">\n                  <a class=\"nav-link\" aria-current=\"page\" href=\"index.html\">Home</a>\n              </li>\n              <li class=\"nav-item\" id=\"navContact\">\n                  <a class=\"nav-link\" href=\"about.html\">About</a>\n              </li>\n              <li class=\"nav-item\" id=\"navAbout\">\n                  <a class=\"nav-link\" href=\"about.html\">Vendors</a>\n              </li>\n              <li class=\"nav-item\" id=\"navContact\">\n                  <a class=\"nav-link\" href=\"contact.html\">Contact</a>\n              </li>\n          </ul>\n          <button class=\"btn btn-outline-success\" type=\"submit\">Donate</button>\n      </div>";
+        collapseDiv.innerHTML = "<div class=\"container-fluid d-flex justify-content-end\">\n          <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\" id=\"nav-ul\">\n              <li class=\"nav-item\" id=\"navHome\">\n                  <a class=\"nav-link\" aria-current=\"page\" href=\"index.html\">Home</a>\n              </li>\n              <li class=\"nav-item\" id=\"navContact\">\n                  <a class=\"nav-link\" href=\"about.html\">About</a>\n              </li>\n              <li class=\"nav-item\" id=\"navAbout\">\n                  <a class=\"nav-link\" href=\"vendors.html\">Vendors</a>\n              </li>\n              <li class=\"nav-item\" id=\"navContact\">\n                  <a class=\"nav-link\" href=\"contact.html\">Contact</a>\n              </li>\n          </ul>\n          <button class=\"btn btn-outline-success\" type=\"submit\">Donate</button>\n      </div>";
       }
     }
   }, {
@@ -9441,46 +9497,12 @@ module.exports = __webpack_require__.p + "images/NAACM_7.jpg";
 /******/ 	})();
 /******/ 	
 /************************************************************************/
-var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
-(() => {
-"use strict";
-/*!**********************************!*\
-  !*** ./src/assets/js/general.js ***!
-  \**********************************/
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.esm.js");
-/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
-/* harmony import */ var _src_assets_css_home_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../src/assets/css/home.css */ "./src/assets/css/home.css");
-/* harmony import */ var _src_assets_css_contact_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../src/assets/css/contact.css */ "./src/assets/css/contact.css");
-/* harmony import */ var _src_assets_css_about_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../src/assets/css/about.css */ "./src/assets/css/about.css");
-/* harmony import */ var _src_assets_css_vendors_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../src/assets/css/vendors.css */ "./src/assets/css/vendors.css");
-/* harmony import */ var _src_assets_js_home_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../src/assets/js/home.js */ "./src/assets/js/home.js");
-/* harmony import */ var _src_assets_js_home_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_src_assets_js_home_js__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _src_assets_js_contact_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../src/assets/js/contact.js */ "./src/assets/js/contact.js");
-/* harmony import */ var _src_assets_js_contact_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_src_assets_js_contact_js__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _src_assets_js_about_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../src/assets/js/about.js */ "./src/assets/js/about.js");
-/* harmony import */ var _src_assets_js_about_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_src_assets_js_about_js__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _src_assets_js_vendors_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../../src/assets/js/vendors.js */ "./src/assets/js/vendors.js");
-/* harmony import */ var _src_assets_js_vendors_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_src_assets_js_vendors_js__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _src_assets_css_unhide_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../../src/assets/css/unhide.css */ "./src/assets/css/unhide.css");
-// Bootstrap 5 import
-
-
-
-// CSS imports)
-
-
-
-
-//js imports
-
-
-
-
-
-})();
-
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module is referenced by other modules so it can't be inlined
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/assets/js/general.js");
+/******/ 	
 /******/ })()
 ;
 //# sourceMappingURL=vendors.bundle.js.map
