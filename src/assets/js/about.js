@@ -1,52 +1,12 @@
+import { setNavElems } from "./general";
+import { setFooter } from "./general";
+
 class About {
   constructor() {
-    this.setCurrentYear();
-    this.setNavElems();
+    setNavElems();
+    setFooter();
     this.addEventListeners();
-  }
-
-  setNavElems() {
-    const collapseDiv = document.querySelector("#navbarSupportedContent");
-
-    if (window.innerWidth < 992) {
-      collapseDiv.innerHTML = `<div class="container-fluid text-center">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-ul">
-              <li class="nav-item" id="navHome">
-                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item" id="navContact">
-                  <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item" id="navAbout">
-                  <a class="nav-link" href="vendors.html">Vendors</a>
-              </li>
-              <li class="nav-item" id="navContact">
-                  <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-          </ul>
-    
-          <hr>
-          <button class="btn btn-outline-success" type="submit">Donate</button>
-      </div>`;
-    } else {
-      collapseDiv.innerHTML = `<div class="container-fluid d-flex justify-content-end">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-ul">
-              <li class="nav-item" id="navHome">
-                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item" id="navContact">
-                  <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item" id="navAbout">
-                  <a class="nav-link" href="vendors.html">Vendors</a>
-              </li>
-              <li class="nav-item" id="navContact">
-                  <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-          </ul>
-          <button class="btn btn-outline-success" type="submit">Donate</button>
-      </div>`;
-    }
+    this.setCurrentYear();
   }
 
   submitForm(e) {
@@ -89,7 +49,7 @@ class About {
   }
 
   addEventListeners() {
-    window.addEventListener("resize", this.setNavElems);
+    window.addEventListener("resize", setNavElems);
     window.addEventListener("submit", this.submitForm);
     window.addEventListener("scroll", this.navOpacity);
   }
