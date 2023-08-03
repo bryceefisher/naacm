@@ -18,11 +18,25 @@ import "/src/assets/css/unhide.css";
 
 //Export functions
 
+//Dynamically set the nav in all html files
 export function setNavElems() {
-  const collapseDiv = document.querySelector("#navbarSupportedContent");
+  const nav = document.querySelector("#nav");
 
   if (window.innerWidth < 992) {
-    collapseDiv.innerHTML = `<div class="container-fluid text-center">
+    nav.innerHTML = `
+    <div class="container-fluid mt-2" >
+                <a class="navbar-brand  mx-3 pt-1" href="/">
+                    <img src="assets/static/img/new_dragonfly.png" alt="" width="150" height="auto"
+                        class="d-inline-block align-text-top" />
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" />
+                </button>
+                <div class="collapse navbar-collapse p-2" id="navbarSupportedContent">
+    <div class="container-fluid text-center">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-ul">
               <li class="nav-item" id="navHome">
                   <a class="nav-link" aria-current="page" href="index.html">Home</a>
@@ -40,9 +54,22 @@ export function setNavElems() {
     
           <hr>
           <button class="btn btn-outline-success" type="submit">Donate</button>
+      </div>
       </div>`;
   } else {
-    collapseDiv.innerHTML = `<div class="container-fluid d-flex justify-content-end">
+    nav.innerHTML = `
+    <div class="container-fluid mt-2" >
+                <a class="navbar-brand  mx-3 pt-1" href="/">
+                    <img src="assets/static/img/new_dragonfly.png" alt="" width="150" height="auto"
+                        class="d-inline-block align-text-top" />
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" />
+                </button>
+                <div class="collapse navbar-collapse p-2" id="navbarSupportedContent"><div class="container-fluid d-flex justify-content-end">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-ul">
               <li class="nav-item" id="navHome">
                   <a class="nav-link" aria-current="page" href="index.html">Home</a>
@@ -58,10 +85,12 @@ export function setNavElems() {
               </li>
           </ul>
           <button class="btn btn-outline-success" type="submit">Donate</button>
+      </div>
       </div>`;
   }
 }
 
+//Dynamically set the footer in all html files
 export function setFooter() {
   const footer = document.getElementById("footer");
 
@@ -71,7 +100,7 @@ export function setFooter() {
           <h3>Stay in Touch!</h3>
           <h5>Sign up for our the NAACM newsletter.</h5>
           <form id="form">
-              <div class="form-group text-center mt-2">
+              <div class="form-group text-center mt-2" id="form">
                   <label for="email">
                       <h5>Email:</h5>
                   </label>
@@ -122,4 +151,45 @@ export function setFooter() {
       </div>
   </div>
 </div>`;
+}
+
+//submits email address to google sheets
+export function submitForm(e) {
+  // Prevent the default form submission
+  e.preventDefault();
+  // Get the form data
+  var form = document.getElementById("form");
+  var formData = new FormData(form);
+  const input = document.getElementById("email");
+  const URL =
+    "https://script.google.com/macros/s/AKfycbxth-Ti4pCrQgGvySbKZ_JCGSMCRaMnyzVjdGcCGsgwJC_UJmIxBV405jo6xB9s45sR5w/exec";
+
+  fetch(URL, {
+    method: "POST",
+    body: formData,
+    mode: "no-cors",
+  })
+    .then((response) => {
+      // Clears the form upon submission
+      input.value = "";
+      // Handle the success response object
+      alert("Thank you for subscribing!");
+    })
+    .catch((error) => {
+      // Handle any errors that occur during the submission
+      console.log("An error occurred while submitting the form:", error);
+    });
+}
+
+export function setCurrentYear() {
+  const date = document.querySelector("#date");
+  date.innerHTML = new Date().getFullYear();
+}
+
+export function navOpacity() {
+  if (window.scrollY > 100) {
+    document.querySelector("#nav").classList.add("opacity-75");
+  } else {
+    document.querySelector("#nav").classList.remove("opacity-75");
+  }
 }
