@@ -2,9 +2,14 @@ body {
     background-color: #e9e1d9;
 }
 
+#vendorsPageTitle {
+    height: 80px;
+    font-size: 5em;
+}
+
 #vendorsDiv {
     background-color: #E3C6B5;
-    color: #544343;
+    color: #544343 !important;
     height: 10vh;
     font-family: "Brush Script MT";
 }
@@ -24,11 +29,6 @@ body {
     color: #544343;
     font-family: "Arvo";
     font-size: 2em;
-}
-
-#vendorsPageTitle {
-    height: 80px;
-    font-size: 5em;
 }
 
 @media (max-width: 990px) {

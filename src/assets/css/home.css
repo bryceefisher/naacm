@@ -2,15 +2,16 @@
   height: 45vh; /* Adjust the desired height here */
 }
 
-.object-fit-cover {
-  object-fit: cover;
-}
 #nav {
   background-color: #e9e1d9 !important;
 }
 
 #navbarSupportedContent {
   background-color: #e9e1d9 !important;
+}
+
+.object-fit-cover {
+  object-fit: cover;
 }
 
 #imgDiv {
