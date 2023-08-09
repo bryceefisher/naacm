@@ -24,7 +24,7 @@ export function setNavElems() {
 
   if (window.innerWidth < 992) {
     nav.innerHTML = `
-    <div class="container-fluid mt-2" >
+    <div class="container-fluid" >
                 <a class="navbar-brand  mx-3 pt-1" href="/">
                     <img src="assets/static/img/new_dragonfly.png" alt="" width="150" height="auto"
                         class="d-inline-block align-text-top" />
@@ -37,7 +37,7 @@ export function setNavElems() {
                 </button>
                 <div class="collapse navbar-collapse p-2" id="navbarSupportedContent">
     <div class="container-fluid text-center">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-ul">
+          <ul class="navbar-nav me-auto  mb-lg-0" id="nav-ul">
               <li class="nav-item" id="navHome">
                   <a class="nav-link" aria-current="page" href="index.html">Home</a>
               </li>
@@ -58,7 +58,7 @@ export function setNavElems() {
       </div>`;
   } else {
     nav.innerHTML = `
-    <div class="container-fluid mt-2" >
+    <div class="container-fluid" >
                 <a class="navbar-brand  mx-3 pt-1" href="/">
                     <img src="assets/static/img/new_dragonfly.png" alt="" width="150" height="auto"
                         class="d-inline-block align-text-top" />

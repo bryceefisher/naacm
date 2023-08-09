@@ -1,22 +1,21 @@
 body {
-    background-color: #e9e1d9;
+  background-color: #e9e1d9;
 }
 
-#aboutPageTitle {
-    height: 80px;
-    font-size: 5em;
-}
+/* #aboutPageTitle {
+  height: 80px;
+  font-size: 5em;
+} */
 
 #aboutDiv {
-    background-color: #E3C6B5;
-    color: #544343;
-    height: 10vh;
-    font-family: "Brush Script MT";
+  background-color: #e3c6b5;
+  color: #544343;
+  height: 13vh;
+  font-family: "Brush Script MT";
 }
 
-@media (max-width: 990px) {
-    #aboutPageTitle {
-        height: 40px;
-        font-size: 3em;
-    }
-}
+/* @media (max-width: 990px) {
+  #aboutPageTitle {
+    font-size: 3em;
+  }
+} */
