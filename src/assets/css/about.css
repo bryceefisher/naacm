@@ -8,3 +8,12 @@ body {
 
   font-family: "Brush Script MT";
 }
+
+#block {
+  background-color: #62b7d9;
+  color: #544343;
+}
+
+#picDiv {
+  width: 50%;
+}
