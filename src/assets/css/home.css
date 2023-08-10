@@ -150,9 +150,6 @@ button {
 
 #footer {
   box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.2);
-}
-
-#footer {
   background-color: #e9e1d9;
 }
 
@@ -161,7 +158,3 @@ input {
   border: 1px solid #62b7d9;
   background-color: #e9e1d9;
 }
-
-/* img {
-  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
-} */

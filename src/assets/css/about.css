@@ -2,20 +2,9 @@ body {
   background-color: #e9e1d9;
 }
 
-/* #aboutPageTitle {
-  height: 80px;
-  font-size: 5em;
-} */
-
 #aboutDiv {
   background-color: #e3c6b5;
   color: #544343;
-  /* height: 13vh; */
+
   font-family: "Brush Script MT";
 }
-
-/* @media (max-width: 990px) {
-  #aboutPageTitle {
-    font-size: 3em;
-  }
-} */

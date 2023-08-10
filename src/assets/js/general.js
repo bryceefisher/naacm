@@ -7,6 +7,7 @@ import "/src/assets/css/home.css";
 import "/src/assets/css/contact.css";
 import "/src/assets/css/about.css";
 import "/src/assets/css/vendors.css";
+import "/src/assets/css/general.css";
 //js imports
 import "/src/assets/js/home.js";
 import "/src/assets/js/contact.js";
@@ -25,7 +26,7 @@ export function setNavElems() {
   if (window.innerWidth < 992) {
     nav.innerHTML = `
     <div class="container-fluid" >
-                <a class="navbar-brand  mx-3 pt-1" href="/">
+                <a class="navbar-brand  mx-3 p-1" href="/">
                     <img src="assets/static/img/new_dragonfly.png" alt="" width="150" height="auto"
                         class="d-inline-block align-text-top" />
                 </a>
@@ -58,7 +59,7 @@ export function setNavElems() {
       </div>`;
   } else {
     nav.innerHTML = `
-    <div class="container-fluid" >
+    <div class="container-fluid p-2 mt-1" >
                 <a class="navbar-brand  mx-3 pt-1" href="/">
                     <img src="assets/static/img/new_dragonfly.png" alt="" width="150" height="auto"
                         class="d-inline-block align-text-top" />

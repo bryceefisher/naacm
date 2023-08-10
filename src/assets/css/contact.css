@@ -8,21 +8,10 @@ a {
   color: #62b7d9;
 }
 
-#vendorDiv {
-  background-color: #d9b29c;
-  color: white;
-  height: 10vh;
-}
-
-#contactPageTitle {
-  height: 80px;
-  font-size: 5em;
-}
-
 #contactUpperDiv {
   background-color: #e3c6b5;
   color: #544343;
-  height: 10vh;
+
   font-family: "Brush Script MT";
 }
 
@@ -45,11 +34,4 @@ iframe {
 .mobileMap {
   height: 350px;
   width: 350px;
-}
-
-@media (max-width: 990px) {
-  #contactUpperDiv {
-    height: 40px;
-    font-size: 1em;
-  }
 }
