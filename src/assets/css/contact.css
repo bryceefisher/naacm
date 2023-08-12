@@ -17,7 +17,7 @@ a {
 
 iframe {
   box-shadow: 6px 4px 6px rgba(0, 0, 0, 0.2);
-  border-radius: 2.5%;
+  border-radius: 2%;
 }
 
 #contactContainer {
@@ -28,19 +28,21 @@ iframe {
   background-color: #e9e1d9 !important;
 }
 .fullMap {
-  height: 400px;
-  width: 600px;
+  height: 50vh;
+  width: 60vw;
+  min-width: 60vh;
+  max-width: 100px;
 }
 
 .mobileMap {
   height: 30vh;
   width: 60vw;
-  min-width: 27vh;
+  min-width: 30vh;
 }
 
 .contactIconContainer {
-  border: #544343 0.1px solid;
-  border-radius: 10%;
+  border: #cfc2b4 0.5px solid;
+  border-radius: 2%;
   background-color: #e0d2c3;
   box-shadow: 6px 4px 6px rgba(0, 0, 0, 0.2);
   min-height: 19vh !important;
