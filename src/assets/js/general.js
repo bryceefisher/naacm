@@ -3,11 +3,12 @@ import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 // CSS imports)
-import "/src/assets/css/home.css";
-import "/src/assets/css/contact.css";
-import "/src/assets/css/about.css";
-import "/src/assets/css/vendors.css";
-import "/src/assets/css/general.css";
+import "/src/assets/css/general.sass";
+import "/src/assets/css/home.sass";
+import "/src/assets/css/contact.sass";
+import "/src/assets/css/about.sass";
+import "/src/assets/css/vendors.sass";
+
 //js imports
 import "/src/assets/js/home.js";
 import "/src/assets/js/contact.js";
@@ -15,7 +16,7 @@ import "/src/assets/js/about.js";
 import "/src/assets/js/vendors.js";
 
 // Prevent FOUC
-import "/src/assets/css/unhide.css";
+import "/src/assets/css/unhide.sass";
 
 //Export functions
 

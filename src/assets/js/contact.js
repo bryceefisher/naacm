@@ -10,6 +10,7 @@ class Contact {
     this.pdfButton = document.getElementById("pdfButton");
     this.gFormButton = document.getElementById("gFormButton");
 
+    // call functions on page load
     setNavElems();
     setFooter();
     this.handleMapResize();
@@ -26,7 +27,8 @@ class Contact {
     let mapWidth = "600";
     let mapHeight = "450";
 
-    if (window.innerWidth < 992) {
+    // set map width and height based on screen size
+    if (window.innerWidth < 1215) {
       container.classList.remove("flex-row");
       container.classList.add("flex-column");
       contactDiv.classList.remove("row");
@@ -50,13 +52,27 @@ class Contact {
   }
 
   handleContactIconResize() {
+    // Inner div container for all 4 icons
+    const innerIconContainer = document.querySelector(".innerIconContainer");
+    // array of all 2 icon containers 2 per row
     const twoIconContainers = document.querySelectorAll(".twoIconContainer");
-
-    if (window.innerWidth < 1215) {
+    // display icons in a 2 x 2 gris on screens less than 1215px and greater than 500px
+    if (window.innerWidth < 1215 && window.innerWidth > 501) {
+      //foreach loop to remove the col-6 and d-flex classes from the twoIconContainers
       twoIconContainers.forEach((container) => {
         container.classList.remove("col-6");
         container.classList.remove("d-flex");
       });
+      innerIconContainer.classList.add("d-flex");
+      // display icons in a 1 x 4 grid on screens less than 500px
+    } else if (window.innerWidth < 501) {
+      innerIconContainer.classList.remove("d-flex");
+      twoIconContainers.forEach((container) => {
+        container.classList.remove("col-6");
+        container.classList.remove("d-flex");
+      });
+
+      // add the col-6 and d-flex classes to the twoIconContainers on screens greater than 1215px
     } else {
       twoIconContainers.forEach((container) => {
         container.classList.add("col-6");
@@ -64,11 +80,12 @@ class Contact {
       });
     }
   }
-
+  // open the vendor app pdf in a new tab
   openPDF() {
     window.open("assets/static/files/2023_Monthly_Market.pdf", "_blank");
   }
 
+  // open the vendor app google form in a new tab
   openGForm() {
     window.open(
       "https://docs.google.com/forms/d/e/1FAIpQLSdN-d2FFhKh-rgy9Inn3DIyyGcj4Rn5LQL7QDEQMKXqoz9_iQ/viewform",
@@ -76,6 +93,7 @@ class Contact {
     );
   }
 
+  // add event listeners for contact page
   addEventListeners() {
     window.addEventListener("resize", setNavElems);
     window.addEventListener("submit", submitForm);
@@ -87,6 +105,7 @@ class Contact {
   }
 }
 
+//create new instance of Contact class if on contact page
 window.addEventListener("DOMContentLoaded", () => {
   if (window.location.pathname.includes("/contact.html")) new Contact();
 });
