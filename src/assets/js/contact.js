@@ -50,11 +50,6 @@ class Contact {
   }
 
   handleContactIconResize() {
-    const outerIconContainer = document.querySelector(".outerIconContainer");
-    const innerIconContainer = document.querySelector(".innerIconContainer");
-    const contactIconOuterContainers = document.querySelectorAll(
-      ".contactIconOuterContainer"
-    );
     const twoIconContainers = document.querySelectorAll(".twoIconContainer");
 
     if (window.innerWidth < 1215) {
@@ -68,7 +63,6 @@ class Contact {
         container.classList.add("d-flex");
       });
     }
-    console.log(window.innerWidth);
   }
 
   openPDF() {
