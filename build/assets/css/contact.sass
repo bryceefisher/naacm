@@ -1,0 +1,50 @@
+@import 'general.sass'
+
+#gFormButton, #pdfButton
+    background-color: $color-primary
+    border-color: $color-primary
+    color: $color-white
+
+a
+    color: $color-link
+
+#contactUpperDiv
+    background-color: $color-background-upper-div
+    color: $color-text-upper-div
+    font-family: "Brush Script MT"
+
+iframe
+    box-shadow: 6px 4px 6px $color-background-iframe
+    border-radius: 2%
+
+#contactContainer, #applicationDiv
+    background-color: $color-shared-background !important
+
+.fullMap, .mobileMap
+    height: $height-full-map
+    width: $width-full-map
+    min-width: $min-width-full-map
+
+.mobileMap
+    min-height: $min-height-mobile-map
+
+.contactIconContainer
+    border: $color-border-icon-container 0.5px solid
+    border-radius: 2%
+    background-color: $color-background-icon-container
+    box-shadow: 6px 4px 6px $color-background-iframe
+    min-height: $min-height-icon-container !important
+    min-width: $min-width-icon-container
+
+@media screen and (max-width: 500px)
+.mobileMap
+    height: $height-mobile-map
+    min-width: $min-width-mobile-map
+
+.contactIconContainer
+    border: $color-border-icon-container 0.5px solid
+    border-radius: 2%
+    background-color: $color-background-icon-container
+    box-shadow: 6px 4px 6px $color-background-iframe
+    min-height: $min-height-icon-container !important
+    min-width: $min-width-icon-container
