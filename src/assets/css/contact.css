@@ -37,7 +37,8 @@ iframe {
 .mobileMap {
   height: 30vh;
   width: 60vw;
-  min-width: 30vh;
+  min-width: 400px;
+  min-height: 400px;
 }
 
 .contactIconContainer {
@@ -45,5 +46,6 @@ iframe {
   border-radius: 2%;
   background-color: #e0d2c3;
   box-shadow: 6px 4px 6px rgba(0, 0, 0, 0.2);
-  min-height: 19vh !important;
+  min-height: 260px !important;
+  min-width: 215px;
 }
