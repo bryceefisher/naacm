@@ -2,7 +2,7 @@
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-// CSS imports)
+// CSS imports
 import "/src/assets/css/general.sass";
 import "/src/assets/css/home.sass";
 import "/src/assets/css/contact.sass";
