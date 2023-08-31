@@ -65,7 +65,7 @@
         <section>
             <div class="container-fluid p-5 d-flex justify-content-center" id="upperDiv">
                 <div class="row col-xl-10 d-flex justify-content-center">
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 homeCard d-flex flex-fill">
                         <div class="text-center" id="info">
                             <span><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#7292bf"
                                     class="bi bi-person-vcard mb-3" viewBox="0 0 16 16">
@@ -76,16 +76,16 @@
 
                                 </svg></span>
                             <h2 class="mb-3">About</h2>
-                            <p>Come experience the vibrant artistry of Native American and Indigenous talents from a 
-                            mosaic of Tribal Nations! Born from the legacy of the 2013 Eugene Winter arts market, 
-                            we now light up the Farmer's Market Pavilion in Eugene every first Sunday of the month. 
-                            From our roots in Eugene and Springfield, we've grown in vision and reach. 
-                            Passionate local Native volunteers drive this journey, dedicated to amplifying authentic 
-                            Native art and crafting the perfect stage for our artisans.
+                            <p>Come experience the vibrant artistry of Native American and Indigenous talents from a
+                                mosaic of Tribal Nations! Born from the legacy of the 2013 Eugene Winter arts market,
+                                we now light up the Farmer's Market Pavilion in Eugene every first Sunday of the month.
+                                From our roots in Eugene and Springfield, we've grown in vision and reach.
+                                Passionate local Native volunteers drive this journey, dedicated to amplifying authentic
+                                Native art and crafting the perfect stage for our artisans.
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 homeCard d-flex flex-fill">
                         <div class="text-center" id="info2">
                             <span><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#7292bf"
                                     class="bi bi-universal-access mb-3" viewBox="0 0 16 16">
@@ -95,14 +95,16 @@
                                 </svg></span>
                             <h2 class="mb-3">Vendors</h2>
                             <p>
-                                Are you an Indigenous artist, Native American, Mexican or Pacific Islander, with a knack for weaving your heritage into your 
-                                creations? Eager to showcase your unique talent? Dive into this list of past and current 
-                                vendors and explore our vendor page! Discover how you can jump in and 
+                                Are you an Indigenous artist, Native American, Mexican or Pacific Islander, with a knack
+                                for weaving your heritage into your
+                                creations? Eager to showcase your unique talent? Dive into this list of past and current
+                                vendors and explore our vendor page! Discover how you can jump in and
                                 share your craft with the world.
+
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 homeCard d-flex flex-fill">
                         <div class="text-center" id="info3">
                             <span><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#7292bf"
                                     class="bi bi-calendar3 mb-3" viewBox="0 0 16 16">
@@ -114,10 +116,11 @@
                                 </svg></span>
                             <h2 class="mb-3">Date/Time</h2>
                             <p>
-                            Support Native American and Indigenous artists and come to the First Sunday 
-                            Eugene Native American Arts & Crafts Market (NAACM) at the Farmers Market Pavilion,
-                             July thru December 2023, 10am-4pm.Shop for authentic Native American beadwork,
-                              jewelry, graphic arts and clothing.
+                                Support Native American and Indigenous artists and come to the First Sunday
+                                Eugene Native American Arts & Crafts Market (NAACM) at the Farmers Market Pavilion,
+                                July thru December 2023, 10am-4pm.Shop for authentic Native American beadwork,
+                                jewelry, graphic arts and clothing.
+
                             </p>
                         </div>
                     </div>
@@ -171,6 +174,22 @@
                 </div>
             </div>
         </section>
+
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <img src="assets/static/img/dragonfly.png" class="rounded me-2" alt="dragonfly"
+                        style="height: 25px;">
+                    <strong class="me-auto">NAACM</strong>
+                    <small>Now</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    Contact Form Successfully Submitted!
+                </div>
+            </div>
+        </div>
+
 
         <div id="footer">
 

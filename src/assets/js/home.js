@@ -1,3 +1,4 @@
+import { Toast } from "bootstrap";
 import { setNavElems } from "./general";
 import { setFooter } from "./general";
 import { submitForm } from "./general";

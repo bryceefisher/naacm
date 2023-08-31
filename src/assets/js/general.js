@@ -17,6 +17,24 @@ import "/src/assets/js/vendors.js";
 
 // Prevent FOUC
 import "/src/assets/css/unhide.sass";
+import { Toast } from "bootstrap";
+
+//import fonts
+const link = document.createElement("link");
+const link1 = document.createElement("link");
+const link2 = document.createElement("link");
+
+link.href =
+  "https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap";
+link.rel = "stylesheet";
+link1.rel = "preconnect";
+link1.href = "https://fonts.googleapis.com";
+link2.rel = "stylesheet";
+link2.href = "https://fonts.gstatic.com";
+link2.crossorigin = true;
+document.head.appendChild(link);
+document.head.appendChild(link1);
+document.head.appendChild(link2);
 
 //Export functions
 
@@ -175,7 +193,11 @@ export function submitForm(e) {
       // Clears the form upon submission
       input.value = "";
       // Handle the success response object
-      alert("Thank you for subscribing!");
+      const liveToast = document.getElementById("liveToast");
+
+      const toast = new Toast(liveToast);
+
+      toast.show();
     })
     .catch((error) => {
       // Handle any errors that occur during the submission
