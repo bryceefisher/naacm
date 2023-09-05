@@ -3,6 +3,8 @@ import { setFooter } from "./general";
 import { submitForm } from "./general";
 import { navOpacity } from "./general";
 import { setCurrentYear } from "./general";
+import { newsletterButtonClick } from "./general";
+import { scrollTop } from "./general";
 
 class About {
   constructor() {
@@ -12,6 +14,8 @@ class About {
     setCurrentYear();
     this.handleUpperDivResize();
     this.handleLowerDivResize();
+    newsletterButtonClick();
+    scrollTop();
   }
 
   handleUpperDivResize() {

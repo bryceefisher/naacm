@@ -3,12 +3,16 @@ import { setFooter } from "./general";
 import { submitForm } from "./general";
 import { navOpacity } from "./general";
 import { setCurrentYear } from "./general";
+import { newsletterButtonClick } from "./general";
+import { scrollTop } from "./general";
 
 class Contact {
   constructor() {
     //DOM elements
     this.pdfButton = document.getElementById("pdfButton");
     this.gFormButton = document.getElementById("gFormButton");
+    this.addressDiv = document.getElementById("addressDiv");
+    this.map = document.getElementById("contactContainer");
 
     // call functions on page load
     setNavElems();
@@ -17,6 +21,8 @@ class Contact {
     this.addEventListeners();
     this.handleContactIconResize();
     setCurrentYear();
+    newsletterButtonClick();
+    scrollTop();
   }
 
   handleMapResize() {
@@ -93,6 +99,15 @@ class Contact {
     );
   }
 
+  scrollMap() {
+    const map = document.getElementById("map");
+    map.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+      inline: "center",
+    });
+  }
+
   // add event listeners for contact page
   addEventListeners() {
     window.addEventListener("resize", setNavElems);
@@ -102,6 +117,7 @@ class Contact {
     window.addEventListener("resize", this.handleContactIconResize);
     this.pdfButton.addEventListener("click", this.openPDF);
     this.gFormButton.addEventListener("click", this.openGForm);
+    this.addressDiv.addEventListener("click", this.scrollMap);
   }
 }
 

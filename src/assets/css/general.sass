@@ -1,20 +1,14 @@
 // Sass Variables
 
 $color-white: white !important
-$color-primary: #7292bf !important
-$color-link: #62b7d9 !important
-$color-background-upper-div: #e3c6b5 !important
-$color-text-upper-div: #544343 !important
+$color-primary: #2C3035 !important
+$color-medium-tan: #ece2dd !important
 $color-background-iframe: rgba(0, 0, 0, 0.2) !important
-$color-shared-background: #e9e1d9 !important
-$color-background-icon-container: #e0d2c3 !important
+$color-shared-background: #f5f3f1 !important
+$color-background-icon-container: #e7e0d8 !important
 $color-border-icon-container: #cfc2b4 !important
-$color-background-body: #e9e1d9 !important
-$color-background-about: #e3c6b5!important
-$color-text-about: #544343!important
-$color-background-block: #62b7d9 !important
-$color-background-vendors: #e3c6b5
-$color-text-vendors: #544343 !important
+
+$box-shadow-standard: 0 0 15px rgba(10, 10, 10, 0.3) !important
 
 $height-full-map: 50vh
 $width-full-map: 60vw
@@ -33,8 +27,23 @@ $banner-font: "Brush Script MT"
 $body-font: "Poppins"
 
 #toast-container
-    background-color: $color-background-vendors
+    background-color: $color-medium-tan
 
 h2, h3, h4, h5, p, span, small, strong, btn
     font-family: $body-font
     font-weight: 300
+
+li
+    color: $color-primary
+
+#submitBtn, #gFormButton, #pdfButton, #newsButton
+    background-color: $color-primary
+    border-color: $color-primary
+    color: $color-white
+    border-radius: 30px
+
+#scrollTop
+    border: .5px solid black
+    border-radius: 25%
+    box-shadow: 2px 2px 15px rgba(10, 10, 10, 0.3)
+    opacity: .7

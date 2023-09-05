@@ -4,6 +4,8 @@ import { setFooter } from "./general";
 import { submitForm } from "./general";
 import { navOpacity } from "./general";
 import { setCurrentYear } from "./general";
+import { newsletterButtonClick } from "./general";
+import { scrollTop } from "./general";
 
 //create class
 class Vendors {
@@ -14,6 +16,8 @@ class Vendors {
     //call functions from this class
     this.addEventListeners();
     setCurrentYear();
+    newsletterButtonClick();
+    scrollTop();
   }
 
   addEventListeners() {
