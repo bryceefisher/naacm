@@ -20,6 +20,7 @@ class Vendors {
     scrollTop();
   }
 
+  //add event listeners to the DOM
   addEventListeners() {
     window.addEventListener("resize", setNavElems);
     window.addEventListener("submit", submitForm);
@@ -27,6 +28,7 @@ class Vendors {
   }
 }
 
+//create new instance of Vendors class if on the vendors page
 window.addEventListener("DOMContentLoaded", () => {
   if (window.location.pathname.includes("vendors.html")) new Vendors();
 });

@@ -18,6 +18,7 @@ class About {
     scrollTop();
   }
 
+  // resize the upper div on the about page by adding and removing bs classes
   handleUpperDivResize() {
     const upperDiv = document.getElementById("aboutUpperDiv");
     const aboutDiv = document.getElementById("aboutInnerDiv");
@@ -45,6 +46,7 @@ class About {
     }
   }
 
+  // resize the lower div on the about page by adding and removing bs classes
   handleLowerDivResize() {
     const upperDiv = document.getElementById("aboutLowerDiv");
     const aboutDiv = document.getElementById("aboutLowerInnerDiv");
@@ -70,6 +72,7 @@ class About {
     }
   }
 
+  //add event listeners
   addEventListeners() {
     window.addEventListener("resize", setNavElems);
     window.addEventListener("resize", this.handleUpperDivResize);
@@ -79,6 +82,7 @@ class About {
   }
 }
 
+//create new instance of About class if on the about page
 window.addEventListener("DOMContentLoaded", () => {
   if (window.location.pathname.includes("about.html")) new About();
 });

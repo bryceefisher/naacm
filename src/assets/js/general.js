@@ -201,11 +201,13 @@ export function submitForm(e) {
     });
 }
 
+//sets the current year in the footer
 export function setCurrentYear() {
   const date = document.querySelector("#date");
   date.innerHTML = new Date().getFullYear();
 }
 
+//changes the opacity of the nav on scroll when the user scrolls past 100px
 export function navOpacity() {
   if (window.scrollY > 100) {
     document.querySelector("#nav").classList.add("opacity-75");
@@ -214,6 +216,7 @@ export function navOpacity() {
   }
 }
 
+//scrolls to the footer when the sign up to newsletter button is clicked
 export function newsletterButtonClick() {
   const newsButton = document.getElementById("newsButton");
   const footer = document.getElementById("footerDiv");
@@ -227,6 +230,7 @@ export function newsletterButtonClick() {
   });
 }
 
+//scrolls to the top of the page when the scroll to top button is clicked, scroll button shows when user scrolls past 100px
 export function scrollTop() {
   const scrollButton = document.getElementById("scrollTop");
 

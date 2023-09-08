@@ -38,18 +38,21 @@ class Home {
     }
   }
 
+  // Opens the about page when the about div is clicked
   aboutNav() {
     window.open("about.html", "_self");
   }
 
+  // Opens the vendors page when the vendors div is clicked
   vendorNav() {
     window.open("vendors.html", "_self");
   }
-
+  // Opens the contact page when the contact div is clicked
   contactNav() {
     window.open("contact.html", "_self");
   }
 
+  // Adds event listeners to the DOM
   addEventListeners() {
     const about = document.getElementById("info");
     const vendors = document.getElementById("info2");
@@ -65,6 +68,7 @@ class Home {
   }
 }
 
+// instantiate the class if the page is the home page
 window.addEventListener("DOMContentLoaded", () => {
   if (
     window.location.pathname == "/" ||

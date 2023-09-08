@@ -25,6 +25,7 @@ class Contact {
     scrollTop();
   }
 
+  // resize the map on the contact page by adding and removing bs classes
   handleMapResize() {
     const container = document.getElementById("contactContainer");
     const contactDiv = document.getElementById("contactDiv");
@@ -57,6 +58,7 @@ class Contact {
     }
   }
 
+  // resize the contact icons on the contact page by adding and removing bs classes
   handleContactIconResize() {
     // Inner div container for all 4 icons
     const innerIconContainer = document.querySelector(".innerIconContainer");
@@ -99,6 +101,7 @@ class Contact {
     );
   }
 
+  // scroll to the map on the contact page when clicking on the address div
   scrollMap() {
     const map = document.getElementById("map");
     map.scrollIntoView({
