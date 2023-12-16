@@ -1,0 +1,53 @@
+@import 'general.sass'
+
+#picDiv
+  width: 50%
+
+body
+  background-color: $color-shared-background
+
+#aboutDiv
+  background-color: $color-medium-tan
+  color: $color-primary
+  font-family: $banner-font
+
+#aboutLowerDiv
+  //background: rgba(0,0,0,0.95) url(assets/static/img/painting-ethnic.jpg)
+  //background: rgba(0,0,0,0.95) url(../static/img/painting-ethnic.jpg)
+  //background: linear-gradient(rgba(0, 0, 0, 0.3), transparent), rgba(0,0,0,0.95) url(../static/img/painting-ethnic.jpg)
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.65)), url(../static/img/painting-ethnic.jpg)
+  //background-blend-mode: darken
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: 50% 25%
+  color: $color-primary-bright
+
+#block
+  background-color: $color-primary
+  color: $color-primary
+
+#aboutHeader
+  font-family: $banner-font !important
+
+#aboutUpperImg
+  max-height: 500px !important
+
+#aboutLowerImg
+  max-width: 400px
+
+#aboutBannerDiv
+  background-color: $color-medium-tan
+  color: $color-primary
+  font-family: $banner-font
+  box-shadow: $box-shadow-standard
+
+#aboutLowerImg, #aboutUpperImg
+  box-shadow: $box-shadow-standard
+
+#historyImg
+  max-height: 500px !important
+  box-shadow: $box-shadow-standard
+
+#historyHeader
+  font-family: $banner-font
+  background-color: $color-medium-tan

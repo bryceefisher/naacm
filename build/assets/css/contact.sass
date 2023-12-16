@@ -1,0 +1,49 @@
+@import 'general.sass'
+
+a
+    color: $color-primary
+
+#contactUpperDiv
+    background-color: $color-medium-tan
+    color: $color-primary
+    font-family: $banner-font !important
+    box-shadow: $box-shadow-standard
+
+iframe
+    box-shadow: 6px 4px 6px $color-background-iframe
+    border-radius: 2%
+
+#contactContainer, #applicationDiv
+    background-color: $color-shared-background !important
+
+.fullMap, .mobileMap
+    height: $height-full-map
+    width: $width-full-map
+    min-width: $min-width-full-map
+
+.mobileMap
+    min-height: $min-height-mobile-map
+
+.contactIconContainer
+    border: $color-border-icon-container 0.5px solid
+    border-radius: 2%
+    background-color: $color-background-icon-container
+    box-shadow: 6px 4px 6px $color-background-iframe
+    min-height: $min-height-icon-container !important
+    min-width: $min-width-icon-container
+
+@media screen and (max-width: 500px)
+.mobileMap
+    height: $height-mobile-map
+    min-width: $min-width-mobile-map
+
+.contactIconContainer
+    border: $color-border-icon-container 0.5px solid
+    border-radius: 2%
+    background-color: $color-background-icon-container
+    box-shadow: 6px 4px 6px $color-background-iframe
+    min-height: $min-height-icon-container !important
+    min-width: $min-width-icon-container
+
+u
+    cursor: pointer
