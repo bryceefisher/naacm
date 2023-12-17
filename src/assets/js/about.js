@@ -131,10 +131,21 @@ class About {
     window.addEventListener("resize", () => this.resizeYouTubeIframe());
     window.addEventListener("submit", submitForm);
     window.addEventListener("scroll", navOpacity);
+    window.addEventListener("resize", () => {
+      if (window.innerWidth < 990) {
+        newsButton.classList.add("visually-hidden");
+      } else {
+        newsButton.classList.remove("visually-hidden");
+      }
+    });
   }
 }
 
 //create new instance of About class if on the about page
 window.addEventListener("DOMContentLoaded", () => {
-  if (window.location.pathname.includes("about.html")) new About();
+  if (
+    window.location.pathname.includes("about") ||
+    window.location.pathname == "about"
+  )
+    new About();
 });

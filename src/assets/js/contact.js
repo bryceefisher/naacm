@@ -120,6 +120,13 @@ class Contact {
     window.addEventListener("scroll", navOpacity);
     window.addEventListener("resize", this.handleMapResize);
     window.addEventListener("resize", this.handleContactIconResize);
+    window.addEventListener("resize", () => {
+      if (window.innerWidth < 990) {
+        newsButton.classList.add("visually-hidden");
+      } else {
+        newsButton.classList.remove("visually-hidden");
+      }
+    });
     this.pdfButton.addEventListener("click", this.openPDF);
     this.gFormButton.addEventListener("click", this.openGForm);
     this.addressDiv.addEventListener("click", this.scrollMap);
@@ -128,5 +135,5 @@ class Contact {
 
 //create new instance of Contact class if on contact page
 window.addEventListener("DOMContentLoaded", () => {
-  if (window.location.pathname.includes("/contact.html")) new Contact();
+  if (window.location.pathname.includes("/contact")) new Contact();
 });

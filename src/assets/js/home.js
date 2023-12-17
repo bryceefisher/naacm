@@ -11,11 +11,11 @@ import { newsletterButtonHide } from "./general";
 class Home {
   constructor() {
     setNavElems();
+    newsletterButtonHide();
     setFooter();
     this.togglePhotos();
     this.addEventListeners();
     setCurrentYear();
-    newsletterButtonHide();
     newsletterButtonClick();
     scrollTop();
   }
@@ -64,6 +64,13 @@ class Home {
     window.addEventListener("resize", setNavElems);
     window.addEventListener("submit", submitForm);
     window.addEventListener("scroll", navOpacity);
+    window.addEventListener("resize", () => {
+      if (window.innerWidth < 990) {
+        newsButton.classList.add("visually-hidden");
+      } else {
+        newsButton.classList.remove("visually-hidden");
+      }
+    });
     about.addEventListener("click", this.aboutNav);
     vendors.addEventListener("click", this.vendorNav);
     contact.addEventListener("click", this.contactNav);
@@ -76,7 +83,8 @@ window.addEventListener("DOMContentLoaded", () => {
     window.location.pathname == "/" ||
     window.location.pathname == "/index.html" ||
     window.location.pathname == "index.html" ||
-    window.location.pathname.includes("index.html")
+    window.location.pathname.includes("index.html") ||
+    window.location.pathname.includes("home")
   )
     new Home();
 });

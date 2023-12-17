@@ -257,12 +257,4 @@ export function newsletterButtonHide() {
   if (window.innerWidth < 990) {
     newsButton.classList.add("visually-hidden");
   }
-
-  window.addEventListener("resize", () => {
-    if (window.innerWidth < 990) {
-      newsButton.classList.add("visually-hidden");
-    } else {
-      newsButton.classList.remove("visually-hidden");
-    }
-  });
 }

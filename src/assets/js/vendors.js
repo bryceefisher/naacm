@@ -27,10 +27,17 @@ class Vendors {
     window.addEventListener("resize", setNavElems);
     window.addEventListener("submit", submitForm);
     window.addEventListener("scroll", navOpacity);
+    window.addEventListener("resize", () => {
+      if (window.innerWidth < 990) {
+        newsButton.classList.add("visually-hidden");
+      } else {
+        newsButton.classList.remove("visually-hidden");
+      }
+    });
   }
 }
 
 //create new instance of Vendors class if on the vendors page
 window.addEventListener("DOMContentLoaded", () => {
-  if (window.location.pathname.includes("vendors.html")) new Vendors();
+  if (window.location.pathname.includes("vendors")) new Vendors();
 });
