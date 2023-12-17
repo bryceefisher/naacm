@@ -72,7 +72,6 @@ export function setNavElems() {
               </li>
           </ul> 
           <hr>
-          <button class="btn" type="button" id="newsButton">Join our Newsletter</button>
           
       </div>
       </div>`;
@@ -105,7 +104,7 @@ export function setNavElems() {
               </li>
           </ul>
 
-          <button class="btn" type="button" id="newsButton">Join our Newsletter</button>
+          <button class="btn" type="button" id="newsButton">Contact us!</button>
 
       </div>
       </div>`;
@@ -119,8 +118,8 @@ export function setFooter() {
   footer.innerHTML = `<div class="container" id="footerDiv">
   <div class="row align-items-center justify-content-center">
       <div class="d-flex text-center col-sm-12 col-md-8 col-lg-6 p-2 flex-column row" id="contactDiv">
-          <h3>Stay in Touch!</h3>
-          <h5>Sign up for our the NAACM newsletter.</h5>
+          <h3>Get in Touch!</h3>
+          <h5>Send us an email today.</h5>
           <form id="form">
               <div class="form-group text-center" id="form">
                   <label for="email">
@@ -129,7 +128,7 @@ export function setFooter() {
                       placeholder="Enter email" required />
               </div>
               <div class="text-center p-3">
-                  <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Sign up
+                  <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Contact us!
                   </button>
               </div>
           </form>

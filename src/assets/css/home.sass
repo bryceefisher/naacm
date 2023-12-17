@@ -104,3 +104,19 @@ input
 
 #info, #info2, #info3
   cursor: pointer
+
+
+// Styles for video responsiveness
+#desktopVideo
+  @media (min-width: 768px)
+    display: block // Show on desktop
+
+  @media (max-width: 767.98px)
+    display: none // Hide on mobile
+
+#mobileVideo
+  @media (min-width: 768px)
+    display: none // Hide on desktop
+
+  @media (max-width: 767.98px)
+    display: block // Show on mobile
