@@ -1,5 +1,4 @@
-// Sass Variables
-
+// Existing Sass Variables
 $color-white: white !important
 $color-primary: #2C3035 !important
 $color-medium-tan: #ece2dd !important
@@ -8,6 +7,7 @@ $color-shared-background: #f5f3f1 !important
 $color-background-icon-container: #e7e0d8 !important
 $color-border-icon-container: #cfc2b4 !important
 $color-primary-bright: #f5f3f1 !important
+$background-color-overlay: rgba(0, 0, 0, 0.5)
 
 $box-shadow-standard: 0 0 15px rgba(10, 10, 10, 0.3) !important
 
@@ -27,26 +27,101 @@ $min-width-icon-container: 215px
 $banner-font: "Brush Script MT"
 $body-font: "Poppins"
 
-// styles used by all pages
+// Additional Styles for Navbar and Logos
+.navbar
+  display: flex
+  align-items: center
+  justify-content: space-between
 
+.logo-container
+  display: flex
+  align-items: center
+
+.navbar-links
+  list-style: none
+  margin: 0
+  padding: 0
+  align-items: center
+  margin-right: 20px
+
+.navbar-logo
+  max-height: 50px
+  margin-left: 10px // Add margin between logos and links
+
+// Additional styling for the logos (adjust as needed)
+.logo-image
+  max-height: 50px // Adjust the size as needed
+  margin-right: 10px
+
+// Styles used by all pages
 #toast-container
-    background-color: $color-medium-tan
+  background-color: $color-medium-tan
 
 h2, h3, h4, h5, p, span, small, strong, btn
-    font-family: $body-font
-    font-weight: 300
+  font-family: $body-font
+  font-weight: 300
 
 li
-    color: $color-primary
+  color: $color-primary
 
 #submitBtn, #gFormButton, #pdfButton, #newsButton, #socialButton
-    background-color: $color-primary
-    border-color: $color-primary
-    color: $color-white
-    border-radius: 30px
+  background-color: $color-primary
+  border-color: $color-primary
+  color: $color-white
+  border-radius: 30px
 
 #scrollTop
-    border: .5px solid black
-    border-radius: 25%
-    box-shadow: 2px 2px 15px rgba(10, 10, 10, 0.3)
-    opacity: .7
+  border: .5px solid black
+  border-radius: 25%
+  box-shadow: 2px 2px 15px rgba(10, 10, 10, 0.3)
+  opacity: .7
+
+.popup-overlay
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.8) // Assuming $background-color-overlay is a semi-transparent black
+  justify-content: center
+  align-items: center
+  z-index: 9999 // Ensure the overlay is above other content
+
+.popup-content
+  width: 95% // Adjust based on preference
+  max-width: 1200px // Maximum width of the popup
+  position: relative // For positioning the close button
+  padding: 20px // Adjust based on preference
+  box-sizing: border-box // Include padding and border in the element's total width and height
+
+  img
+    width: 100% // Make image responsive
+    height: auto // Maintain aspect ratio
+
+#closePopup
+  position: absolute
+  top: 10px // Adjust based on preference
+  right: 10px // Adjust based on preference
+  border: none
+  background-color: transparent
+  font-size: 20px // Adjust based on preference
+  cursor: pointer
+
+@media (max-width: 768px)
+  .popup-content
+    width: 95% // Increase width for smaller screens
+
+
+
+  .header-logos
+    display: flex
+    align-items: center
+    margin-right: 20px
+
+.header-logo
+  max-height: 50px
+  margin-right: 10px
+
+  &:last-child
+    margin-right: 0

@@ -83,9 +83,9 @@ module.exports = {
     }),
     new htmlWebpackPlugin({
       template: path.resolve(__dirname, "./src/fashion.html"),
-      chunks: ["fashion"],
+      chunks: ["fashion"], // Add this line
       inject: "body",
-      filename: "v.html",
+      filename: "fashion.html",
     }),
     new Dotenv(),
     new copyPlugin({

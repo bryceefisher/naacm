@@ -40,6 +40,8 @@ class Home {
     }
   }
 
+
+
   // Opens the about page when the about div is clicked
   aboutNav() {
     window.open("about.html", "_self");
@@ -87,4 +89,23 @@ window.addEventListener("DOMContentLoaded", () => {
     window.location.pathname.includes("home")
   )
     new Home();
+});
+
+// EVENT POPUP
+document.addEventListener("DOMContentLoaded", () => {
+  const popup = document.getElementById('valentinesPopup');
+  if (popup) {
+      popup.style.display = 'flex'; // Make the popup visible
+
+      // Hide the popup after 7 seconds
+      setTimeout(() => {
+          popup.style.display = 'none';
+      }, 7000);
+  }
+
+  // Optional: Close button functionality
+  const closeButton = document.getElementById('closePopup');
+  closeButton?.addEventListener('click', () => {
+      popup.style.display = 'none';
+  });
 });

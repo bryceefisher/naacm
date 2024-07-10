@@ -42,6 +42,14 @@ document.head.appendChild(link2);
 export function setNavElems() {
   const nav = document.querySelector("#nav");
 
+  const logoHTML = `
+  <div class="logo-container">
+  <img src="logo1.png" alt="Logo 1" class="navbar-logo">
+  <img src="logo2.png" alt="Logo 2" class="navbar-logo">
+</div>
+
+`;
+
   if (window.innerWidth < 992) {
     nav.innerHTML = `
     <div class="container-fluid" >
@@ -61,6 +69,9 @@ export function setNavElems() {
               <li class="nav-item" id="navHome">
                   <a class="nav-link" aria-current="page" href="index.html">Home</a>
               </li>
+              <li class="nav-item" id="navHome">
+                  <a class="nav-link" href="fashion.html">Fashion</a>
+              </li>
               <li class="nav-item" id="navContact">
                   <a class="nav-link" href="about.html">About</a>
               </li>
@@ -79,6 +90,7 @@ export function setNavElems() {
   } else {
     nav.innerHTML = `
     <div class="container-fluid p-2 mt-1" >
+                ${logoHTML} <!-- Insert logos HTML here -->
                 <a class="navbar-brand  mx-3 pt-1" href="/">
                     <img src="assets/static/img/new_dragonfly.png" alt="" width="150" height="auto"
                         class="d-inline-block align-text-top" />
@@ -99,6 +111,9 @@ export function setNavElems() {
               </li>
               <li class="nav-item" id="navAbout">
                   <a class="nav-link" href="vendors.html">Vendors</a>
+              </li>
+              <li class="nav-item" id="navFashion">
+                  <a class="nav-link" href="fashion.html">Fashion</a>
               </li>
               <li class="nav-item" id="navContact">
                   <a class="nav-link" href="contact.html">Contact</a>
