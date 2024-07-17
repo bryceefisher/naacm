@@ -8,12 +8,15 @@ import "/src/assets/css/home.sass";
 import "/src/assets/css/contact.sass";
 import "/src/assets/css/about.sass";
 import "/src/assets/css/vendors.sass";
+import "/src/assets/css/fashion.sass";
 
 //js imports
 import "/src/assets/js/home.js";
 import "/src/assets/js/contact.js";
 import "/src/assets/js/about.js";
 import "/src/assets/js/vendors.js";
+import "/src/assets/js/fashion.js";
+
 
 // Prevent FOUC
 import "/src/assets/css/unhide.sass";
@@ -44,8 +47,7 @@ export function setNavElems() {
 
   const logoHTML = `
   <div class="logo-container">
-  <img src="logo1.png" alt="Logo 1" class="navbar-logo">
-  <img src="logo2.png" alt="Logo 2" class="navbar-logo">
+
 </div>
 
 `;
@@ -90,7 +92,7 @@ export function setNavElems() {
   } else {
     nav.innerHTML = `
     <div class="container-fluid p-2 mt-1" >
-                ${logoHTML} <!-- Insert logos HTML here -->
+                
                 <a class="navbar-brand  mx-3 pt-1" href="/">
                     <img src="assets/static/img/new_dragonfly.png" alt="" width="150" height="auto"
                         class="d-inline-block align-text-top" />

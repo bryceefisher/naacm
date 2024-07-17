@@ -85,7 +85,7 @@ module.exports = {
       template: path.resolve(__dirname, "./src/fashion.html"),
       chunks: ["fashion"],
       inject: "body",
-      filename: "v.html",
+      filename: "fashion.html",
     }),
     new Dotenv(),
     new copyPlugin({
